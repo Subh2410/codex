@@ -10,12 +10,9 @@
 public class projecteuler6 {
 
 	public static void main(String[] args) {
-		int i,sum=0,soq=0,differ,qos=0;
-		for(i=1;i<=100;i++)
-		{
-			soq=soq+(int)Math.pow(i,2);
-			sum+=i;
-		}
+		int i,sum=0,soq=0,differ,qos=0,n=100;
+		soq=(n*(n+1)*(2*n+1))/6;
+		sum=(n*(n+1))/2;
 		qos=(int)Math.pow(sum,2);
 		differ=qos-soq;
 		System.out.println("difference between the sum of the squares of the first one hundred natural numbers and the square of the sum = "+differ);
